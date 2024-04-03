@@ -11,6 +11,7 @@ public class FlyTurtleTienDat : MonoBehaviour
     public Sprite shellSprite;
     public Sprite nomalSprite;
     private bool canMove = true;
+    public GameObject Koopa;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,7 @@ public class FlyTurtleTienDat : MonoBehaviour
                 EnterShell();
                 canMove = false;
                 StartCoroutine(ReactivateMoveAfterDelay(3f));
+
             }
             else
             {
@@ -62,9 +64,11 @@ public class FlyTurtleTienDat : MonoBehaviour
     private IEnumerator ReactivateMoveAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay); // Đợi 3 giây
-        OutShell();
-        transform.position = Vector2.MoveTowards(transform.position, waypoint[0].position, moveSpeed * Time.deltaTime);
-        canMove = true; 
+        //OutShell();
+        //transform.position = Vector2.MoveTowards(transform.position, waypoint[0].position, moveSpeed * Time.deltaTime);
+        //canMove = true;
+        gameObject.SetActive(false);
+        Instantiate(Koopa, gameObject.transform.position, Quaternion.identity);
     }
     private void EnterShell()
     {

@@ -9114,6 +9114,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 66311300247534350, guid: 7c1def7a42fce564abca1cfaf820a671, type: 3}
+      propertyPath: Koopa
+      value: 
+      objectReference: {fileID: 3611261760737888598, guid: 0724cbeea21c46642b57c4ace196dea7, type: 3}
+    - target: {fileID: 66311300247534350, guid: 7c1def7a42fce564abca1cfaf820a671, type: 3}
       propertyPath: shellSprite
       value: 
       objectReference: {fileID: 4655894718737083102, guid: 5fcc4ba2e43fa6b4a86856bc8d0fad2c, type: 3}
