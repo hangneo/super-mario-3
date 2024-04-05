@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class FlagPole : MonoBehaviour
@@ -45,5 +45,6 @@ public class FlagPole : MonoBehaviour
 
         subject.position = position;
     }
+    
 
 }
