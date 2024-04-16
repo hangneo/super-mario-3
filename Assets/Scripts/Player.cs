@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public CapsuleCollider2D capsuleCollider { get; private set; }
     public DeathAnimation deathAnimation { get; private set; }
 
+
     public bool big => bigRenderer.enabled;
     public bool dead => deathAnimation.enabled;
     public bool starpower { get; private set; }
@@ -115,5 +116,13 @@ public class Player : MonoBehaviour
         activeRenderer.spriteRenderer.color = Color.white;
         starpower = false;
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        NemVuKhi nemVuKhi = GetComponent<NemVuKhi>();
+;        if (collision.gameObject.CompareTag("cole"))
+        {
+            Destroy(collision.gameObject);
+            nemVuKhi.isAtt = true;
+        }
+    }
 }
