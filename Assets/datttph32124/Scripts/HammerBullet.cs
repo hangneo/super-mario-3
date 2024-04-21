@@ -6,6 +6,8 @@ public class HammerBullet : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
 
+    [SerializeField] private GameObject exploPrefab;
+
     private void Start()
     {
         Destroy(gameObject, 3f);
@@ -17,9 +19,11 @@ public class HammerBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer != 9 && collision.gameObject.layer != 11 && collision.gameObject.layer != 12)
         {
-            //Time.timeScale = 0f;
+            Debug.Log(collision.gameObject.name);
+            Instantiate(exploPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

@@ -6935,8 +6935,8 @@ Transform:
   m_GameObject: {fileID: 885216552}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.26, y: 30.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 28.73, y: 29.7787, z: 0}
+  m_LocalScale: {x: 2.689537, y: 0.37545887, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1457151494}
@@ -7689,7 +7689,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985002462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13425,7 +13425,7 @@ MonoBehaviour:
   - {fileID: 1682757987}
   hammerBullet: {fileID: 1505375880879622298, guid: 61c8877844ff5834cb6146d4d25e3cdf, type: 3}
   firePos: {fileID: 1491944598}
-  attackRange: 5
+  attackRange: 5.5
   moveSpeed: 2
   rb: {fileID: 1722683118}
 --- !u!70 &1722683123

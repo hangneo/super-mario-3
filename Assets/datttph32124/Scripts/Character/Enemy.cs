@@ -141,6 +141,11 @@ public class Enemy : Character
         {
             ChangeDirection(!isRight);
         }
+
+        if (collision.gameObject.layer == 3)
+        {
+            Debug.Log("Looooooose");
+        }
     }
 
     public void ChangeDirection(bool isRight)
