@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HeadPat
   layers:
   - Default
   - TransparentFX
@@ -12,11 +13,11 @@ TagManager:
   - Water
   - UI
   - PowerUp
-  - Enemy
+  - Boss
   - Shell
   - Barrier
-  - 
-  - 
+  - JumpPat
+  - Sight
   - 
   - 
   - 

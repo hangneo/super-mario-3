@@ -8,8 +8,11 @@ public class HammerBullet : MonoBehaviour
 
     private void Start()
     {
-        rb.velocity = new Vector2(2f, 12f);
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 3f);
+
+        rb.AddForce(new Vector2((Enemy.isRight ? 1 : -1) * 200f, 300f)); 
+
+        //rb.velocity = new Vector2(-5, 10f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
